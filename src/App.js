@@ -1,13 +1,14 @@
 
 import "./App.css";
 import styled from 'styled-components';
+import Carousel from "./Carousel";
 
 function App() {
 
   const Section = styled.section`
     min-height: 100vh;
     width: 100%;
-    background-color: grey;
+    background-color: #18191A;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,14 +32,26 @@ function App() {
   align-items: center;
   `
 
+  const Title = styled.h2`
+    font-size: 24px;
+    text-transform: capitalize;
+    width: 80%;
+    color: wheat;
+    align-self: flex-start;
+    margin: 0 auto;
+  `
+
   return (
       <Section>
         <Container>
           <Box>
-            carousel
+            <Carousel/>
           </Box>
           <Box>
-            text
+            <Title>
+                Geçirdiğim En Güzel 3 Yılım
+            </Title>
+            <Title> Nice Senelere Aşkım</Title>
           </Box>
         </Container>
       </Section>
